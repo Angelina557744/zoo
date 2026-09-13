@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — Зверополис</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner container">
+      <a class="header__logo" href="index.html">
+        <img src="img/logo.png" alt="Зверополис" width="120" height="120">
+      </a>
+
+      <button class="header__burger" type="button" aria-label="Открыть меню" data-burger>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="header__nav nav" data-nav>
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="bilet.html">Купить билет</a></li>
+          <li class="nav__item"><a class="nav__link" href="pets.html">Животные</a></li>
+          <li class="nav__item"><a class="nav__link" href="pomoch.html">Оказать помощь</a></li>
+          <li class="nav__item"><a class="nav__link" href="kontakt.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contacts">
+      <div class="container container--narrow">
+        <h1 class="section__title">Контакты</h1>
+
+        <div class="contacts__grid">
+          <div class="contacts__col">
+            <h2 class="contacts__subtitle">Адрес</h2>
+            <p class="contacts__text">
+              ул. Расковой, Оренбург, Оренбургская обл., 460021
+            </p>
+
+            <h2 class="contacts__subtitle">Режим работы</h2>
+            <p class="contacts__text">
+              Зоопарк «Зверополис» работает ежедневно, без выходных.
+              Касса работает с 9:00 до 17:00.
+            </p>
+
+            <h2 class="contacts__subtitle">Телефоны</h2>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <span class="contacts__label">Заказ экскурсий:</span>
+                <a class="contacts__link" href="tel:+79914315403">8 991 431 54 03</a>
+              </li>
+              <li class="contacts__item">
+                <span class="contacts__label">Касса:</span>
+                <a class="contacts__link" href="tel:+79398292640">8 939 829 26 40</a>
+              </li>
+              <li class="contacts__item">
+                <span class="contacts__label">Бухгалтерия:</span>
+                <a class="contacts__link" href="tel:+79914315401">8 991 431 54 01</a>
+              </li>
+              <li class="contacts__item">
+                <span class="contacts__label">Приёмная:</span>
+                <a class="contacts__link" href="tel:+73816922063">(38169) 2 20 63</a>
+              </li>
+              <li class="contacts__item">
+                <span class="contacts__label">Служба охраны:</span>
+                <a class="contacts__link" href="tel:+79914315402">8 991 431 54 02</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contacts__col">
+            <h2 class="contacts__subtitle">Реквизиты</h2>
+            <dl class="contacts__requisites">
+              <dt class="contacts__label">Учредитель</dt>
+              <dd class="contacts__value">Министерство культуры Омской области</dd>
+
+              <dt class="contacts__label">ИНН / КПП</dt>
+              <dd class="contacts__value">5510001427 / 551001001</dd>
+
+              <dt class="contacts__label">ОГРН</dt>
+              <dd class="contacts__value">1025501533815</dd>
+
+              <dt class="contacts__label">Юридический адрес</dt>
+              <dd class="contacts__value">ул. Расковой, Оренбург, Оренбургская обл., 460021</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="contacts__map">
+          <iframe
+            class="contacts__map-frame"
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A2506922c864e488260794c515e4cb71403bc9e6fcb95c4bdb189cc17febaf3b2&amp;source=constructor"
+            width="100%"
+            height="420"
+            frameborder="0"
+            allowfullscreen
+            loading="lazy"
+            title="Карта — Зверополис"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© Зверополис, 2025</p>
+      <p class="footer__note">Сделано с заботой о природе</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

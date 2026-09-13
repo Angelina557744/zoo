@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оказать помощь — Зверополис</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner container">
+      <a class="header__logo" href="index.html">
+        <img src="img/logo.png" alt="Зверополис" width="120" height="120">
+      </a>
+
+      <button class="header__burger" type="button" aria-label="Открыть меню" data-burger>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="header__nav nav" data-nav>
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="bilet.html">Купить билет</a></li>
+          <li class="nav__item"><a class="nav__link" href="pets.html">Животные</a></li>
+          <li class="nav__item"><a class="nav__link" href="pomoch.html">Оказать помощь</a></li>
+          <li class="nav__item"><a class="nav__link" href="kontakt.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="help">
+      <div class="container container--narrow">
+        <h1 class="section__title">Оказать помощь</h1>
+
+        <h2 class="help__subtitle">Хотите помочь?</h2>
+
+        <p class="help__text">
+          Любой человек и организация могут выбрать животное и стать его опекуном. Здесь вы можете отправить пожертвования на содержание животных.
+        </p>
+
+        <div class="help__contacts">
+          <div class="help__contact">
+            <span class="help__contact-label">Email:</span>
+            <a class="help__link" href="mailto:ZooTopiaKB@mail.ru">ZooTopiaKB@mail.ru</a>
+            <button class="help__copy" type="button" data-copy="ZooTopiaKB@mail.ru" aria-label="Скопировать email">
+              <span data-copy-text>Скопировать</span>
+            </button>
+          </div>
+          <div class="help__contact">
+            <span class="help__contact-label">Телефон:</span>
+            <a class="help__link" href="tel:+79914315403">8 991 431 54 03</a>
+            <button class="help__copy" type="button" data-copy="+79914315403" aria-label="Скопировать телефон">
+              <span data-copy-text>Скопировать</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="help__gallery">
+          <img class="help__photo" src="img/slide-1.png" alt="Животные зоопарка" width="480" height="320">
+          <img class="help__photo" src="img/slide-2.png" alt="Животные зоопарка" width="480" height="320">
+        </div>
+      </div>
+    </section>
+
+    <section class="donate" data-reveal>
+      <div class="container container--narrow">
+        <h2 class="donate__title">Поддержать зоопарк</h2>
+
+        <div class="donate__progress">
+          <div class="donate__progress-head">
+            <span class="donate__progress-label">Собрано</span>
+            <span class="donate__progress-value"><span data-donate-current>340 000</span> ₽ из 500 000 ₽</span>
+          </div>
+          <div class="donate__progress-bar">
+            <span class="donate__progress-fill" data-donate-fill style="--progress: 0%"></span>
+          </div>
+        </div>
+
+        <div class="donate__amounts" data-donate-amounts>
+          <button class="donate__amount" type="button" data-amount="500">500 ₽</button>
+          <button class="donate__amount" type="button" data-amount="1000">1 000 ₽</button>
+          <button class="donate__amount" type="button" data-amount="5000">5 000 ₽</button>
+          <button class="donate__amount" type="button" data-amount="custom">Своя сумма</button>
+        </div>
+
+        <div class="donate__custom" data-donate-custom hidden>
+          <label class="donate__custom-label" for="customAmount">Введите сумму, ₽</label>
+          <input class="donate__custom-input" type="number" id="customAmount" name="customAmount" min="100" step="100" value="1000" data-custom-input>
+        </div>
+
+        <p class="donate__summary">
+          Сумма пожертвования: <strong data-donate-summary>1 000 ₽</strong>
+        </p>
+
+        <button class="btn btn--primary donate__submit" type="button" data-donate-open>
+          Пожертвовать
+        </button>
+
+        <p class="donate__note">
+          Все пожертвования идут на корм, ветеринарное обслуживание и обустройство вольеров.
+        </p>
+      </div>
+    </section>
+
+    <section class="care" data-reveal>
+      <div class="container">
+        <h2 class="section__title">Кого вы можете опекать</h2>
+
+        <div class="care__grid">
+          <article class="care-card">
+            <img class="care-card__img" src="img/tiger.png" alt="Амурский тигр" width="400" height="300">
+            <div class="care-card__body">
+              <h3 class="care-card__title">Амурский тигр</h3>
+              <p class="care-card__text">Опека включает питание, ветеринарный уход и обогащение среды.</p>
+              <p class="care-card__price">от 15 000 ₽ / месяц</p>
+            </div>
+          </article>
+
+          <article class="care-card">
+            <img class="care-card__img" src="img/bear.png" alt="Бурый медведь" width="400" height="300">
+            <div class="care-card__body">
+              <h3 class="care-card__title">Бурый медведь</h3>
+              <p class="care-card__text">Помогите обеспечить медведю полноценный рацион и зимний сон.</p>
+              <p class="care-card__price">от 12 000 ₽ / месяц</p>
+            </div>
+          </article>
+
+          <article class="care-card">
+            <img class="care-card__img" src="img/lynx.png" alt="Сибирская рысь" width="400" height="300">
+            <div class="care-card__body">
+              <h3 class="care-card__title">Сибирская рысь</h3>
+              <p class="care-card__text">Ваша поддержка — это свежее мясо, игрушки и уход ветеринара.</p>
+              <p class="care-card__price">от 8 000 ₽ / месяц</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="help-qr" data-reveal>
+      <div class="container container--narrow">
+        <p class="help__note">
+          Для пожертвования зайдите в приложение вашего банка и отсканируйте QR-код
+        </p>
+
+        <div class="help__qr">
+          <img src="img/q.png" alt="QR-код для пожертвования" width="300" height="300">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© Зверополис, 2025</p>
+      <p class="footer__note">Сделано с заботой о природе</p>
+    </div>
+  </footer>
+
+  <div class="donate-modal" data-donate-modal aria-hidden="true">
+    <div class="donate-modal__backdrop" data-donate-close></div>
+    <div class="donate-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="donate-modal-title">
+      <button class="donate-modal__close" type="button" aria-label="Закрыть" data-donate-close>
+        <span></span><span></span>
+      </button>
+      <h2 class="donate-modal__title" id="donate-modal-title">Пожертвование</h2>
+      <p class="donate-modal__text">
+        Отсканируйте QR-код в приложении вашего банка.
+      </p>
+      <p class="donate-modal__amount">
+        Сумма: <strong data-donate-modal-amount>1 000 ₽</strong>
+      </p>
+      <div class="donate-modal__qr">
+        <img src="img/q.png" alt="QR-код для пожертвования" width="260" height="260">
+      </div>
+      <p class="donate-modal__hint">
+        После перевода напишите нам на
+        <a class="help__link" href="mailto:ZooTopiaKB@mail.ru">ZooTopiaKB@mail.ru</a>,
+        чтобы мы могли подтвердить получение.
+      </p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Животные — Зверополис</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner container">
+      <a class="header__logo" href="index.html">
+        <img src="img/logo.png" alt="Зверополис" width="120" height="120">
+      </a>
+
+      <button class="header__burger" type="button" aria-label="Открыть меню" data-burger>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="header__nav nav" data-nav>
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="bilet.html">Купить билет</a></li>
+          <li class="nav__item"><a class="nav__link" href="pets.html">Животные</a></li>
+          <li class="nav__item"><a class="nav__link" href="pomoch.html">Оказать помощь</a></li>
+          <li class="nav__item"><a class="nav__link" href="kontakt.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="pets">
+      <div class="container">
+        <h1 class="section__title">Животные</h1>
+
+        <div class="pets__filters" data-pets-filters>
+          <button class="pets__filter pets__filter--active" type="button" data-filter="all">Все</button>
+          <button class="pets__filter" type="button" data-filter="mammal">Млекопитающие</button>
+          <button class="pets__filter" type="button" data-filter="bird">Птицы</button>
+          <button class="pets__filter" type="button" data-filter="reptile">Рептилии</button>
+          <button class="pets__filter" type="button" data-filter="amphibian">Земноводные</button>
+        </div>
+
+        <p class="pets__count">Найдено: <span data-pets-count>9</span></p>
+
+        <div class="pets__grid" data-pets-grid>
+
+          <article class="pet-card" data-category="mammal" data-pet='{"title":"Амурский тигр","img":"img/tiger.png","desc":"В нашем зоопарке живёт пара амурских тигров — Джагар и Джуна. Джуна приехала в зоопарк в 2018 году из Московского зоопитомника, а Джагар двумя годами ранее из Ижевского зоопарка."}'>
+            <figure class="pet-card__figure">
+              <img class="pet-card__img" src="img/tiger.png" alt="Амурский тигр" width="400" height="300">
+              <figcaption class="pet-card__caption">
+                <h2 class="pet-card__title">Амурский тигр</h2>
+                <p class="pet-card__text">
+                  В нашем зоопарке живёт пара амурских тигров — Джагар и Джуна. Джуна приехала в зоопарк в 2018 году из Московского зоопитомника, а Джагар двумя годами ранее из Ижевского зоопарка.
+                </p>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="pet-card" data-category="mammal" data-pet='{"title":"Сибирская рысь","img":"img/lynx.png","desc":"Рысь — самая северная кошка. В отличие от большинства кошачьих у неё короткий хвост."}'>
+            <figure class="pet-card__figure">
+              <img class="pet-card__img" src="img/lynx.png" alt="Сибирская рысь" width="400" height="300">
+              <figcaption class="pet-card__caption">
+                <h2 class="pet-card__title">Сибирская рысь</h2>
+                <p class="pet-card__text">
+                  Рысь — самая северная кошка. В отличие от большинства кошачьих у неё короткий хвост.
+                </p>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="pet-card" data-category="mammal" data-pet='{"title":"Рыжая лиса","img":"img/fox.png","desc":"Ведёт одиночный образ жизни, в период размножения живёт парами."}'>
+            <figure class="pet-card__figure">
+              <img class="pet-card__img" src="img/fox.png" alt="Рыжая лиса" width="400" height="300">
+              <figcaption class="pet-card__caption">
+                <h2 class="pet-card__title">Рыжая лиса</h2>
+                <p class="pet-card__text">
+                  Ведёт одиночный образ жизни, в период размножения живёт парами.
+                </p>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="pet-card" data-category="reptile" data-pet='{"title":"Игуана обыкновенная","img":"img/iguana.png","desc":"Наиболее крупный представитель семейства. Достигает до 2 м длины. Ведёт древесный образ жизни. В случае опасности скрывается в воде. Превосходно плавает и ныряет."}'>
+            <figure class="pet-card__figure">
+              <img class="pet-card__img" src="img/iguana.png" alt="Игуана обыкновенная" width="400" height="300">
+              <figcaption class="pet-card__caption">
+                <h2 class="pet-card__title">Игуана обыкновенная</h2>
+                <p class="pet-card__text">
+                  Наиболее крупный представитель семейства. Достигает до 2 м длины. Ведёт древесный образ жизни. В случае опасности скрывается в воде. Превосходно плавает и ныряет.
+                </p>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="pet-card" data-category="reptile" data-pet='{"title":"Нильский крокодил","img":"img/crocodile.png","desc":"Питается рыбой, мелкими млекопитающими, черепахами. Яйца откладывает в гнёзда из гниющей растительности. Самка остаётся вблизи кладки, защищая её от врагов."}'>
+            <figure class="pet-card__figure">
+              <img class="pet-card__img" src="img/crocodile.png" alt="Нильский крокодил" width="400" height="300">
+              <figcaption class="pet-card__caption">
+                <h2 class="pet-card__title">Нильский крокодил</h2>
+                <p class="pet-card__text">
+                  Питается рыбой, мелкими млекопитающими, черепахами. Яйца откладывает в гнёзда из гниющей растительности. Самка остаётся вблизи кладки, защищая её от врагов.
+                </p>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="pet-card" data-category="mammal" data-pet='{"title":"Бурый медведь","img":"img/bear.png","desc":"Этот подвид бурого медведя отличается светлой окраской и длинными светлыми, почти белыми когтями на передних лапах."}'>
+            <figure class="pet-card__figure">
+              <img class="pet-card__img" src="img/bear.png" alt="Бурый медведь" width="400" height="300">
+              <figcaption class="pet-card__caption">
+                <h2 class="pet-card__title">Бурый медведь</h2>
+                <p class="pet-card__text">
+                  Этот подвид бурого медведя отличается светлой окраской и длинными светлыми, почти белыми когтями на передних лапах.
+                </p>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="pet-card is-hidden" data-category="reptile" data-pet='{"title":"Радужный удав","img":"img/boa.png","desc":"Радужным удав назван за необычайно сильный металлический блеск чешуи, создающий живую гамму всех цветов радуги при движении змеи в лучах солнца."}'>
+            <figure class="pet-card__figure">
+              <img class="pet-card__img" src="img/boa.png" alt="Радужный удав" width="400" height="300">
+              <figcaption class="pet-card__caption">
+                <h2 class="pet-card__title">Радужный удав</h2>
+                <p class="pet-card__text">
+                  Радужным удав назван за необычайно сильный металлический блеск чешуи, создающий живую гамму всех цветов радуги при движении змеи в лучах солнца.
+                </p>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="pet-card is-hidden" data-category="reptile" data-pet='{"title":"Грифовая черепаха","img":"img/turtle.png","desc":"По величине грифовая черепаха достигает до 1,5 м и весит до 60 кг. Своё название получила из-за мощных челюстей и выступов на панцире, похожих на кожу аллигатора."}'>
+            <figure class="pet-card__figure">
+              <img class="pet-card__img" src="img/turtle.png" alt="Грифовая черепаха" width="400" height="300">
+              <figcaption class="pet-card__caption">
+                <h2 class="pet-card__title">Черепаха</h2>
+                <p class="pet-card__text">
+                  По величине грифовая черепаха достигает до 1,5 м и весит до 60 кг. Своё название получила из-за мощных челюстей и выступов на панцире, похожих на кожу аллигатора.
+                </p>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="pet-card is-hidden" data-category="mammal" data-pet='{"title":"Снежная лиса","img":"img/arctic-fox.png","desc":"Снежная лисица — порода обыкновенной лисицы, выведенная человеком. Также её называют бакурианской и грузинской."}'>
+            <figure class="pet-card__figure">
+              <img class="pet-card__img" src="img/arctic-fox.png" alt="Снежная лиса" width="400" height="300">
+              <figcaption class="pet-card__caption">
+                <h2 class="pet-card__title">Снежная лиса</h2>
+                <p class="pet-card__text">
+                  Снежная лисица — порода обыкновенной лисицы, выведенная человеком. Также её называют бакурианской и грузинской.
+                </p>
+              </figcaption>
+            </figure>
+          </article>
+
+        </div>
+
+        <div class="pets__more">
+          <button class="btn btn--primary pets__more-btn" type="button" data-pets-more>
+            Показать ещё
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="pets-about">
+      <div class="container container--narrow">
+        <p class="pets-about__text">
+          В зоопарке вы часто видите, как в одном вольере гуляют животные разных видов: например, страусы и жирафы, патагонские мары и тапир, верблюды и домашние овцы. Зачем же мы устраиваем такие «общежития»? Во-первых, именно так звери и птицы живут в дикой природе: в африканских саваннах зебры пасутся бок о бок с газелями, а над ними возвышаются слоны и жирафы.
+        </p>
+        <p class="pets-about__text">
+          Для животных естественно видеть и слышать не только своих сородичей, но и самых разнообразных соседей. А в зоопарке это особенно важно: «искусственная» среда обитания бедна событиями и стимулами. Даже самый большой вольер не может сравниться с территорией, доступной в дикой природе. Мы не можем строить огромные вольеры, но можем сделать жизнь наших подопечных более насыщенной за счёт обогащения среды, тренингов и совместного содержания. В таких смешанных экспозициях животные могут взаимодействовать, а могут игнорировать соседей, но картинка перед глазами у них меняется. А ещё — много звуков и запахов! Это тоже важно.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© Зверополис, 2025</p>
+      <p class="footer__note">Сделано с заботой о природе</p>
+    </div>
+  </footer>
+
+  <div class="pet-modal" data-pet-modal aria-hidden="true">
+    <div class="pet-modal__backdrop" data-pet-close></div>
+    <div class="pet-modal__dialog" role="dialog" aria-modal="true">
+      <button class="pet-modal__close" type="button" aria-label="Закрыть" data-pet-close>
+        <span></span><span></span>
+      </button>
+      <img class="pet-modal__img" src="" alt="" data-pet-modal-img>
+      <div class="pet-modal__body">
+        <h2 class="pet-modal__title" data-pet-modal-title></h2>
+        <p class="pet-modal__desc" data-pet-modal-desc></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

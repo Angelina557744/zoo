@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Sansation";
+  src: url("../fonts/sansation-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sansation";
+  src: url("../fonts/sansation-light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SeoulNamsan";
+  src: url("../fonts/seoul-namsan-light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ZenKaku";
+  src: url("../fonts/zen-kaku-medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
